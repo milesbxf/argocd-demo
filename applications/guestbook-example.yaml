@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: helm-dependency
+  name: guestbook-example
 spec:
   destination:
     namespace: miles-scratch
@@ -12,6 +12,6 @@ spec:
       valueFiles:
       - values.yaml
       version: v2
-    path: helm-dependency
+    path: guestbook-example
     repoURL: https://github.com/milesbxf/argocd-demo.git
     targetRevision: HEAD
