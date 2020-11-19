@@ -2,6 +2,12 @@ wordpress:
   wordpressPassword: foo
   mariadb:
     db:
-      password: bar
+      password: somethingMoreSecure
     rootUser:
       password: baz
+
+  metrics:
+    enabled: true
+
+  ingress:
+    enabled: true
